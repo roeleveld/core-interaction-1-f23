@@ -1,0 +1,12 @@
+body {
+    color: red;
+}
+
+li {
+    border-bottom: 2px solid green;
+    padding-bottom: 40px;
+}
+
+li:hover {
+    background-color: yellow;
+}
