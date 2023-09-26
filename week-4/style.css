@@ -1,0 +1,164 @@
+/* Reset some default styles for consistency */
+
+body,
+h1,
+h2,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+/* Set the base font size using 'rem' for scalability */
+
+html {
+    font-size: 16px;
+    /* 1rem = 16px, establishing the root font size */
+}
+
+
+/* Style the body for background and text color */
+
+body {
+    color: white;
+    /* Set text color to white */
+    letter-spacing: 0.03em;
+    /* Adjust letter spacing for readability */
+    font-family: verdana, arial, sans-serif;
+    /* Define font stack for the body text */
+    background-color: rgb(21, 0, 247);
+    /* Background color with RGB values */
+    margin-bottom: 10vh;
+    /* Margin at the bottom using viewport height units */
+    background-image: url(oliebollen.png);
+    /* Set a background image */
+    background-blend-mode: multiply;
+    /* Blend mode for background image */
+    background-attachment: fixed;
+    /* Fixed background attachment */
+    background-position: center;
+    /* Center the background image */
+}
+
+
+/* Style the main heading (h1) */
+
+h1 {
+    color: #f00f00;
+    /* Red color for h1 */
+    font-size: 15vw;
+    /* Responsive font size based on viewport width */
+    margin-left: 32px;
+    /* Left margin */
+    letter-spacing: -0.05em;
+    /* Adjust letter spacing */
+}
+
+
+/* Style subheadings (h2) */
+
+h2 {
+    font-size: 18px;
+    /* Fixed font size for h2 */
+    padding-bottom: 2rem;
+    /* Padding at the bottom */
+}
+
+
+/* Style paragraphs (p) */
+
+p {
+    line-height: 1.5;
+    /* Line height for better readability */
+}
+
+
+/* Style ordered and unordered lists (ol and ul) */
+
+ol,
+ul {
+    padding-left: 15px;
+    /* Left padding for lists */
+}
+
+
+/* Style ordered list (ol) */
+
+ol {
+    padding-left: 1.5em;
+    /* Left padding for ordered lists */
+}
+
+
+/* Style list items (li) */
+
+li {
+    padding-bottom: 10px;
+    /* Padding at the bottom of list items */
+}
+
+
+/* Style sections */
+
+section {
+    border-top: 1px dashed white;
+    /* Dashed top border for sections */
+    margin-top: 2rem;
+    /* Margin at the top */
+    margin-left: 2rem;
+    /* Margin at the left */
+    padding-top: .5rem;
+    /* Padding at the top */
+    max-width: 50%;
+    /* Maximum width for sections */
+    /* Media query for responsiveness */
+    @media screen and (max-width: 600px) {
+        max-width: 100%;
+        /* Full width for sections on smaller screens */
+        margin-right: 2rem;
+        /* Margin at the right on smaller screens */
+    }
+}
+
+
+/* Style images within sections */
+
+section img {
+    width: 100%;
+    /* Full width for images within sections */
+    padding-bottom: 1rem;
+    /* Padding at the bottom of images */
+}
+
+
+/* Style the .bigtitle class */
+
+.bigtitle {
+    /* These styles below are commented out */
+    /* position: fixed; */
+    /* right: 4px; */
+    /* top: 250px; */
+    /* transform: rotate(90deg); */
+}
+
+
+/* Style the .image-wrapper class */
+
+.image-wrapper {
+    position: fixed;
+    /* Fixed positioning for the image wrapper */
+    mix-blend-mode: multiply;
+    /* Blend mode for the image */
+    left: 30%;
+    /* Left positioning for the image wrapper */
+    top: 0;
+    /* Top positioning for the image wrapper */
+    /* Style the image within the wrapper */
+    img {
+        width: 100%;
+        /* Full width for images within the wrapper */
+    }
+}
