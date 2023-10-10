@@ -9,6 +9,7 @@ ol {
     margin: 0;
     padding: 0;
     font-weight: normal;
+    /* color: green; */
 }
 
 
@@ -47,14 +48,8 @@ body {
 /* Style the main heading (h1) */
 
 h1 {
-    color: #f00f00;
-    /* Red color for h1 */
-    font-size: 15vw;
-    /* Responsive font size based on viewport width */
-    margin-left: 32px;
-    /* Left margin */
-    letter-spacing: -0.05em;
-    /* Adjust letter spacing */
+    font-size: 50vw;
+    color: red;
 }
 
 
@@ -72,7 +67,21 @@ h2 {
 
 p {
     line-height: 1.5;
+    padding-bottom: 1rem;
     /* Line height for better readability */
+}
+
+p a {
+    color: orange;
+    opacity: 0;
+}
+
+p a:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    transition: 1s ease;
+    opacity: 1;
 }
 
 
@@ -161,4 +170,9 @@ section img {
         width: 100%;
         /* Full width for images within the wrapper */
     }
+}
+
+.hightlight {
+    background-color: yellow;
+    color: blue;
 }

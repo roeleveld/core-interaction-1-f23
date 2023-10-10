@@ -1,0 +1,41 @@
+body {
+    background-color: #dadada;
+}
+
+div {
+    width: 500px;
+    height: 200px;
+}
+
+.static {
+    background-color: blue;
+    position: static;
+}
+
+.relative {
+    background-color: yellow;
+    position: relative;
+}
+
+.fixed {
+    background-color: purple;
+    position: fixed;
+    /* z-index: 1; */
+}
+
+.absolute {
+    background-color: green;
+    position: absolute;
+}
+
+.sticky {
+    background-color: red;
+    position: sticky;
+    /* top: 10px; */
+}
+
+.filler-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    display: none;
+}
