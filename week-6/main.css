@@ -1,5 +1,10 @@
 body {
     background-color: #dadada;
+    color: white;
+}
+
+h1 {
+    color: black;
 }
 
 div {
@@ -10,32 +15,49 @@ div {
 .static {
     background-color: blue;
     position: static;
+    z-index: 6;
 }
 
 .relative {
     background-color: yellow;
     position: relative;
+    top: 10px;
+    right: 50px;
+    z-index: 1;
 }
 
 .fixed {
     background-color: purple;
     position: fixed;
-    /* z-index: 1; */
+    top: 0px;
+    right: 0px;
+    z-index: 6;
+}
+
+.demo {
+    position: relative;
+    left: 100px;
+    border: 1px solid red;
 }
 
 .absolute {
     background-color: green;
     position: absolute;
+    top: 5px;
+    z-index: 1;
 }
 
 .sticky {
     background-color: red;
     position: sticky;
-    /* top: 10px; */
+    top: 10px;
+    z-index: 5;
 }
 
 .filler-text {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    display: none;
+    display: visible;
+    color: black;
+    z-index: 99;
 }

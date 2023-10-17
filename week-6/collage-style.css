@@ -1,5 +1,6 @@
 body {
     font-family: 'DM Mono', monospace;
+    background-color: cadetblue;
 }
 
 a {
@@ -26,6 +27,7 @@ div {
     background-image: url(images/bertchen.jpg);
     background-size: cover;
     mix-blend-mode: multiply;
+    /* opacity: .4; */
     z-index: 3;
 }
 
@@ -33,11 +35,12 @@ div {
     background-image: url(images/bertchen2.jpg);
 }
 
-.middle-image {
+.middle-image img {
     bottom: 20px;
     left: -200px;
     z-index: 2;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
+    background-blend-mode: multiply;
     transform: scale(1.5);
 }
 
