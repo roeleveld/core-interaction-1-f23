@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moon Phase</title>
+    <link rel="stylesheet" href="css/moon.css">
+</head>
+
+<body>
+    <div class="moon-container">
+        <div class="moon-shadow"></div>
+    </div>
+    <div class="moon-details">
+        <!-- Will be populated by JS -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get user's location
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    // Fetch moon data (mocked for this example)
+                    const mockMoonData = {
+                        phase: "First Quarter",
+                        moonrise: "1:00 PM",
+                        moonset: "1:00 AM"
+                    };
+
+                    // Update moon phase visually
+                    const moonShadow = document.querySelector('.moon-shadow');
+                    if (mockMoonData.phase === "First Quarter") {
+                        moonShadow.style.left = "50%";
+                        moonShadow.style.width = "50%";
+                    }
+                    // Add more conditions for other phases
+
+                    // Update moon details text
+                    const moonDetails = document.querySelector('.moon-details');
+                    moonDetails.innerHTML = `
+              <p>Phase: ${mockMoonData.phase}</p>
+              <p>Moonrise: ${mockMoonData.moonrise}</p>
+              <p>Moonset: ${mockMoonData.moonset}</p>
+            `;
+                });
+            } else {
+                console.log("Geolocation is not available.");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-color: pink;
+    font-family: arial;
+    color: red;
+    font-size: 100px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.page-wrapper {
+    padding-top: 100px;
+    padding-left: 25px;
+    margin: 0;
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    text-align: center;
+    animation: spinType 3s ease;
+    animation-iteration-count: infinite;
+}
+
+img {
+    height: 500px;
+}
+
+#bear {
+    height: 500px;
+    animation: spinType .3s infinite;
+}
+
+#nose {
+    opacity: 0;
+}
+
+#nose:hover {
+    opacity: 1;
+    transition: 1s ease;
+    transform: scale(1.5);
+}
+
+@keyframes spinType {
+    0% {
+        transform: rotate(0.5turn);
+    }
+    20% {
+        transform: rotate(0.7turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
